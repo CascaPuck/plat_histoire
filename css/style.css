@@ -128,23 +128,12 @@ p {
     font-style: italic;
   text-transform: none;
 }
-#fh5co-home .flexslider .fh5co-text h2 a {
-  color: #fb6e14;
-}
+
 #fh5co-home .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#fh5co-home .flexslider .fh5co-overlay {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
- /* opacity: .5;
-  background: #000;*/
-}
+
 #fh5co-home .flexslider .flex-control-nav,
 #fh5co-home .flexslider .flex-direction-nav {
   display: none;
@@ -172,9 +161,8 @@ p {
   height: 850px;
   padding-top: 50px;
 }
-/*#fh5co-about .fh5co-2col {
-  width: 40%;
-}*/
+
+
 @media screen and (max-width: 1200px) {
   #fh5co-about .fh5co-2col {
     width: 100%;
@@ -185,33 +173,12 @@ p {
   text-align: left;
   background: #130d08 url(../images/wood_1.png) repeat;
 }
-/*@media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-text {
-    padding: 1em;
-  }*/
+
 
 #fh5co-about .fh5co-text .btn {
   color: #fff;
 }
-#fh5co-about .fh5co-text .heading {
-  margin-bottom: 30px;
-  color: #fff;
-  font-style: italic;
-  font-weight: 300;
-  position: relative;
-  padding-bottom: 30px;
-  text-align: center;
-}
-#fh5co-about .fh5co-text .heading:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 40px;
-  height: 2px;
-  left: 50%;
-  background: #fb6e14;
-  margin-left: -20px;
-}
+
 #fh5co-about .fh5co-text p {
   line-height: 2;
   color: #a99c92;
@@ -701,10 +668,6 @@ p {
   z-index: 0;
 }
 
-#fh5co-events .fh5co-event h3 {
-  padding: 0;
-  margin: 0;
-}
 #fh5co-events .fh5co-event .fh5co-event-meta {
   margin-bottom: 20px;
   display: block;
@@ -734,18 +697,6 @@ p {
   margin-bottom: 0;
 }
 
-#fh5co-contact {
-  padding: 7em 0;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-contact {
-    padding: 5em 0;
-  }
-}
-#fh5co-contact h3 {
-  margin-bottom: 30px;
-  font-style: italic;
-}
 @media screen and (max-width: 768px) {
   #fh5co-contact {
     padding: 5em 0;
@@ -1023,48 +974,7 @@ p {
   width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  #fh5co-type .fh5co-type {
-    margin-bottom: 30px;
-  }
-}
-#fh5co-type h3 {
-  margin-bottom: 30px;
-  font-style: italic;
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 110px;
-}
-#fh5co-type h3.with-icon {
-  position: relative;
-}
-#fh5co-type h3.with-icon:before, #fh5co-type h3.with-icon::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  margin-left: -54px;
-  margin-top: -125px;
-  width: 104px;
-  height: 104px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-/*#fh5co-type h3.with-icon.icon-1:before, #fh5co-type h3.with-icon.icon-1::before {
-  background: url(../images/type-1.png) no-repeat center center;
-}
-#fh5co-type h3.with-icon.icon-2:before, #fh5co-type h3.with-icon.icon-2::before {
-  background: url(../images/type-2.png) no-repeat center center;
-}
-#fh5co-type h3.with-icon.icon-3:before, #fh5co-type h3.with-icon.icon-3::before {
-  background: url(../images/type-3.png) no-repeat center center;
-}
-#fh5co-type h3.with-icon.icon-4:before, #fh5co-type h3.with-icon.icon-4::before {
-  background: url(../images/type-4.png) no-repeat center center;
-}*/
+
 #fh5co-type p {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1479,12 +1389,12 @@ width: 15%;
 
 #autre-plat h3 {
   color: black;
-  margin: 0;
+  text-align: center;
   padding: 0;
+  margin-top: 50px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 40px;
-  letter-spacing: 2px;
   margin-bottom: 0;
 }
 
