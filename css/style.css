@@ -708,6 +708,17 @@ width: 15%;
   margin-bottom: 0;
 }
 
+#autre-plat h4 {
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
 #fiche-technique {
   margin-left: 35%;
 }
@@ -962,25 +973,42 @@ input {
   }
 
   #video-intro {
-    height: 900px;
+    height: 700px;
+  }
+
+  .description-meal {
+    display: block;
   }
 
   .description-meal h2 {
-    font-size: 16px;
+    font-size: 40px;
   }
 
   .description-meal p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .description-meal iframe {
       width: 305px;
       height: 292px;
-      margin-bottom: 300px;
+  }
+
+  #desc1, #desc2{
+    width: 90%;
   }
 
   .buttons {
     width: 300px;
+  }
+
+  #video-milmeyon {
+    margin-top: 100px;
+    position: relative;
+    bottom: -300px;
+  }
+
+  #autre-plat {
+    margin-top: 250px;
   }
 }
 
@@ -991,38 +1019,51 @@ input {
   }
 
   #video-intro {
-    height: 1000px;
+    height: 700px;
   }
 
-  .description-meal h2 {
-    font-size: 15px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    line-height: 20px;
-    margin-bottom: 30px;
+  .description-meal {
+    display: block;
   }
 
-  .description-meal p {
-    font-size: 11px;
+  #desc1, #desc2{
+    width: 90%;
   }
-
+  
   .description-meal iframe {
-      width: 305px;
-      height: 292px;
-      top: -300px;
-      position: relative;
+    width: 400px; 
+    height: 389px;
+  }
+  
+  .description-meal p {
+    color: #a99c92;
+    font-size: 20px;
   }
 
   h1 {
     font-size: 50px;
   }
-
+  
+  #video-milmeyon {
+    position: relative;
+    bottom: -400px;
+  }
 }
+
+
 
 @media screen and (max-width: 400px) {
   #next {
     width: 30px;
     height: 30px;
+  }
+
+  .description-meal {
+    display: block;
+  }
+
+  #desc1, #desc2{
+    width: 90%;
   }
 
   .description-meal h2 {
@@ -1033,7 +1074,7 @@ input {
   }
 
   .description-meal p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .description-meal iframe {
