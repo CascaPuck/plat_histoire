@@ -183,37 +183,6 @@ p {
   line-height: 2;
   color: #a99c92;
 }
-#fh5co-about .fh5co-text p span.firstcharacter {
-  float: left;
-  color: #903;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 10px;
-  padding-left: 3px;
-  font-style: italic;
-  top: -20px;
-  position: relative;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-}
-#fh5co-about .fh5co-bg {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-bg {
-    width: 100%;
-    /*min-height: 600px;*/
-  }
-}
-@media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-bg {
-    width: 100%;
-    /*min-height: 600px;*/
-  }
-}
 
 #fh5co-sayings {
   padding: 6em 0;
@@ -228,11 +197,13 @@ p {
   border-left: none;
 
 }
-/*@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   #fh5co-sayings .flexslider .slides li blockquote {
     padding: 0 20px;
   }
-}*/
+}
+
 #fh5co-sayings .flexslider .slides li blockquote p {
   font-size: 22px;
   line-height: 1.5;
@@ -253,33 +224,6 @@ p {
     font-size: 18px;
   }
 }
-#fh5co-sayings .flexslider .flex-control-paging {
-  position: relative;
-}
-/*#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
-  bottom: -70px;
-}*/
-@media screen and (max-width: 768px) {
-  /*#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
-    bottom: -60px;
-  }*/
-}
-#fh5co-sayings .flexslider .flex-control-paging li a {
-  width: 14px;
-  height: 14px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: none;
-}
-#fh5co-sayings .flexslider .flex-control-paging li a:active, #fh5co-sayings .flexslider .flex-control-paging li a:focus {
-  outline: none;
-}
-#fh5co-sayings .flexslider .flex-control-paging li a.flex-active {
-  top: 2px;
-  position: relative;
-  background: transparent;
-  box-shadow: none;
-  border: 2px solid #fb6e14;
-}
 
 #fh5co-featured {
   padding-top: 100px;
@@ -292,25 +236,7 @@ p {
     padding: 5em 0;
   }
 }
-#fh5co-featured .fh5co-heading .heading {
-  position: relative;
-  padding-top: 30px !important;
-  color: #fff;
-}
-#fh5co-featured .fh5co-heading .heading:before, #fh5co-featured .fh5co-heading .heading::before {
-  height: 64px;
-  width: 64px;
-  position: absolute;
-  content: "";
-  /*background: url(../images/0103-served-plate_64.png) no-repeat;*/
-  top: 0;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -32px;
-}
-#fh5co-featured .fh5co-heading .sub-heading {
-  color: #a99c92;
-}
+
 #fh5co-featured .fh5co-grid {
   display: -webkit-box;
   display: -moz-box;
