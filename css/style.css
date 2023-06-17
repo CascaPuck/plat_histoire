@@ -99,7 +99,7 @@ p {
   color: #fff;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 900px) {
   #fh5co-home .flexslider .fh5co-text h1 {
     font-size: 80px;
     margin-bottom: 0;
@@ -995,7 +995,11 @@ input {
   }
 
   .description-meal h2 {
-    font-size: 13px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 20px;
+    margin-bottom: 30px;
   }
 
   .description-meal p {
@@ -1005,8 +1009,14 @@ input {
   .description-meal iframe {
       width: 305px;
       height: 292px;
-      margin-bottom: 300px;
+      top: -300px;
+      position: relative;
   }
+
+  h1 {
+    font-size: 50px;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -1016,7 +1026,10 @@ input {
   }
 
   .description-meal h2 {
-    font-size: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1px;
   }
 
   .description-meal p {
@@ -1026,7 +1039,11 @@ input {
   .description-meal iframe {
       width: 305px;
       height: 292px;
-      margin-bottom: 400px;
+      
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
 }
