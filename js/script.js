@@ -74,13 +74,8 @@ Scroller.prototype = {
 var scroller = new Scroller();
 scroller.init();
 
-function toggleText() {
-  var text = document.getElementById("demo");
-  if (text.style.display === "none") {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none";
-  }
-}
+
+
+
 
 

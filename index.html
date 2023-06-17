@@ -206,9 +206,65 @@
 				<div class="text">
 					Selon certains musées de Busan, ses habitants mangeaient pas mal de “kkulkulkkuli-juk” à l’époque de la guerre de Corée.		
 						</div>
-				<button>En savoir plus</button>
+				<button id="btn3">En savoir plus</button>
 			  </div>
 			</div>
+
+			<div id="mask" class="hidden"></div>
+			<section id="modal" class="hidden">
+				<div id="ferme">X</div>
+				<p>Selon certains musées de Busan, ses habitants mangeaient pas mal de “kkulkulkkuli-juk” à l’époque de la guerre de Corée. </p>
+				<p>Kkulkkuli-juk est considéré comme un “gukbap”, 
+					ce qui veut dire “soupe de riz” en coréen : 
+					en effet, il s’agit là d’un plat cuisiné à partir de divers ingrédients, 
+					dont du riz la plupart du temps. Le tout était versé dans une seule et même marmite, 
+					où il pouvait mijoter à différentes températures selon l’intensité du feu de cuisson 
+					permise par les conditions de vie de l’époque, du jour.
+				</p>
+				<p>Ce plat est apparu notamment pour la raison qu’il était à ce moment
+					 impossible de servir des accompagnements en plus du plat principal.
+					  De nos jours, il est inconcevable pour les Coréens de servir un plat sans accompagnement, 
+					  aussi bien à la maison qu’au restaurant. Mais à cause de la pauvreté extrême qui sévissait 
+					  durant la guerre de Corée, le fait de ne pas pouvoir servir d’accompagnements,
+					   en plus des plats de style “gukbap” tels que le budae jjigae ou encore le kkulkulkkuli-juk,
+					    ce tout symbolisait de manière forte les conditions de vie terribles de cette période sombre 
+						de l’histoire de la péninsule. </p>
+						<p><i>“Les réfugiés étaient mal nourris. 
+							Ils ne pouvaient même pas manger trois fois par jour comme
+							 les Coréens peuvent de nos jours. Un bol de riz pour une famille entière. 
+							 [...] Après tout, c’était [le kkulkkuli-juk] considéré comme un gukbap.
+							  “ Kkulkkuli-juk” veut dire “porcs mangeant les restes de la nourriture des humains”. 
+							  A cette époque, ce plat était appelé ainsi car on aurait dit une portion de 
+							  riz telle que celles données à manger aux cochons. [...]
+							   Ils [les réfugiés] mettaient toute la nourriture qu’ils trouvaient dans une marmite,
+							    peu importe leur état, et faisaient bouillir le tout. [...] 
+								C’est ce qu’est le kkulkkuli-juk. [...]
+								 En effet, les accompagnements devaient tout le temps être servis dans
+								  la culture culinaire coréenne. Les réfugiés ne purent faire ainsi, 
+								  c’est pourquoi ils ont mélangé le riz, la soupe et le reste des divers 
+								  ingrédients ensemble. Et ils se nourrissaient du résultat de ce mélange.”</i></p>
+			</section>
+
+			<script>
+				const btn3 = document.getElementById('btn3');
+				const mask = document.getElementById('mask');
+				const modal = document.getElementById('modal');
+
+				btn3.addEventListener('click', () => {
+  					mask.classList.remove('hidden');
+  					modal.classList.remove('hidden');
+				});
+
+				mask.addEventListener('click', () => {
+  					mask.classList.add('hidden');
+  					modal.classList.add('hidden');
+				});
+
+				ferme.addEventListener('click', () => {
+  					mask.classList.add('hidden');
+  					modal.classList.add('hidden');
+				});
+			</script>
 
 			
 			<div class="inner_part">
@@ -220,10 +276,63 @@
 				<div class="text">
 					Le gukbap, littéralement “soupe de riz”, est une sorte de mets coréen.
 				</div>
-				<button>En savoir plus</button>
+				<button id="btn4">En savoir plus</button>
 			  </div>
 			</div>
-		
+
+			<div id="mask2" class="hidden"></div>
+			<section id="modal2" class="hidden">
+				<div id="ferme2">X</div>
+				<p>Le gukbap, littéralement “soupe de riz”, est une sorte de mets coréen. 
+					Comme le dit si bien son nom, le gukbap regroupe tous les plats à base de riz et de bouillon. 
+					Par conséquent, le budae jjigae ainsi que le  kkulkkuli-juk sont considérés comme des gukbap. </p>
+					<p>La raison pour laquelle le gukbap est si populaire en Corée résulte dans le fait qu’il s’agit
+					 là d’un plat très facile à manger et ne nécessitant pas de ces fameux accompagnements. </p>
+					 <p>
+						La soupe de porc, mélangée à du riz chaud ou même froid, est un autre exemple de gukbap. 
+						C’est un plat fameux à Busan, aujourd'hui encore.  
+					 </p>
+					 <p><i>“Les plats comme le gukbap (de la soupe avec di riz) 
+						sont populaires en Corée. [...] La soupe de porc était préparée et ensuite
+						 dégustée avec du riz, et cela peu importe la température du riz 
+						 (qui pouvait être chauf ou froid). [...]
+						  C’est là également une des raisons pour lesquelles la soupe de porc 
+						  devint aussi fameuse à Busan.”
+					</i></p>
+					<p>De nos jours, les jeunes Coréens ne savourent pas les gukbap. 
+						Ils y goûtent une fois et c’est tout. Cela peut-être dû au fait
+						 qu’il s’agit d’un plat assez simple, sans accompagnement. 
+						 Ainsi, les gukbap peuvent donner l’impression d’être des “plats du pauvre”.
+						  Cependant, pour les personnes de l’ancienne génération, les gukbap resteront à jamais des plats délicieux,
+						 emplis de la nostalgie et de l’âpre souvenir de la guerre. </p>
+					<p><i>“Cependant, les jeunes personnes de la nouvelle génération disent que
+						 les gukbap ne sont pas savoureux. Ils y goûtent une fois de temps à autre 
+						 et disent que le goût n’est pas bon. [...] Il y a tellement de plats 
+						 que les gens ne mangent pas souvent de nos jours, mais ce sont ces mêmes plats 
+						 qui restent aussi délicieux qu’à l’époque pour nous, l’ancienne génération.” 
+					</i></p>
+			</section>
+
+			<script>
+				const btn4 = document.getElementById('btn4');
+				const mask2 = document.getElementById('mask2');
+				const modal2 = document.getElementById('modal2');
+
+				btn4.addEventListener('click', () => {
+  					mask2.classList.remove('hidden');
+  					modal2.classList.remove('hidden');
+				});
+
+				mask2.addEventListener('click', () => {
+  					mask2.classList.add('hidden');
+  					modal2.classList.add('hidden');
+				});
+
+				ferme2.addEventListener('click', () => {
+  					mask2.classList.add('hidden');
+  					modal2.classList.add('hidden');
+				});
+			</script>
 
 	</div>
 

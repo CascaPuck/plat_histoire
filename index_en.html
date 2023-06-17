@@ -209,11 +209,64 @@
 			  <div class="content content_1">
 				<div class="title">Kkulkkuli-juk</div>
 				<div class="text">
-					Selon certains musées de Busan, ses habitants mangeaient pas mal de “kkulkulkkuli-juk” à l’époque de la guerre de Corée.		
-						</div>
-				<button>Read More</button>
+					According to some museums, people in Busan once ate a lot of kkulkulkkuli-juk. 
+				</div>
+				<button id="btn3">Read More</button>
 			  </div>
 			</div>
+
+
+			<div id="mask" class="hidden"></div>
+			<section id="modal" class="hidden">
+				<div id="ferme">X</div>
+				<p>According to some museums, people in Busan once ate a lot of kkulkulkkuli-juk.</p>
+				<p>Kkulkkuli-juk is considered as “gukbap”, 
+					which literally means “rice soup” in Korean: it is indeed a dish based on various ingredients, 
+					almost including rice all the time. The whole mixture was put into one and only one pot, where
+					 it was boiling at a certain temperature (average, lower or too high) depending on the living 
+					 facilities by day. 
+				</p>
+				<p>This dish was born mainly because of this one reason,
+					 which was that side dishes weren’t even a possibility for the refugees. 
+					 Yet, when you eat in Korea nowadays (at home or at a restaurant), it seems
+					  unthinkable to not serve side dishes beside the main dishes. Because of the extreme
+					   poverty during that time, side dishes weren’t prepared, and so its symbolism came to
+					    represent the living conditions back then, beside the soup-based dishes such as budae
+						 jjigae or kkulkkuli-juk. 
+				</p>
+						<p><i>“The refugees weren’t fed well. 
+							They couldn’t eat three meals a day like they do nowadays. 
+							One bowl of rice was for one family.” [...] 
+							After all, this is also considered as gukbap. “Kkulkkuli” means 
+							“pigs eating human leftovers”. At that time, it was called kkulkkuli-juk 
+							because it looked like rice eaten by pigs. [...] 
+							They put all the food you have in a pot regardless of what it is and boil it. 
+							[...] That's what kkkulkkuli-juk is. [...] Yes. Korean food should have side dishes. 
+							Refugees couldn’t do that so they put rice and soup together. They ate it all together.”
+						</i></p>
+			</section>
+
+			<script>
+				const btn3 = document.getElementById('btn3');
+				const mask = document.getElementById('mask');
+				const modal = document.getElementById('modal');
+
+				btn3.addEventListener('click', () => {
+  					mask.classList.remove('hidden');
+  					modal.classList.remove('hidden');
+				});
+
+				mask.addEventListener('click', () => {
+  					mask.classList.add('hidden');
+  					modal.classList.add('hidden');
+				});
+
+				ferme.addEventListener('click', () => {
+  					mask.classList.add('hidden');
+  					modal.classList.add('hidden');
+				});
+			</script>
+
 
 			
 			<div class="inner_part">
@@ -223,11 +276,65 @@
 			  <div class="content content_2">
 				<div class="title">Gukbap</div>
 				<div class="text">
-					Le gukbap, littéralement “soupe de riz”, est une sorte de mets coréen.
+					Gukbap, literally “rice soup”, is a kind of Korean dish.
 				</div>
-				<button>Read More</button>
+				<button id="btn4">Read More</button>
 			  </div>
 			</div>
+
+
+			<div id="mask2" class="hidden"></div>
+			<section id="modal2" class="hidden">
+				<div id="ferme2">X</div>
+				<p>Gukbap, literally “rice soup”, is a kind of Korean dish. 
+					As the name reveals, it includes all types of dishes 
+					composed partially of rice and broth. Therefore, 
+					Budae jjigae and kkulkkuli-juk are considered as gukbap.</p>
+					<p>The reason why gukbap is a popular dish in Korea lies in the fact that it is such 
+						an easy meal to eat, and it isn’t needed to eat it with side dishes.</p>
+					 <p>
+						Pork soup, mixed with hot or cold rice, is another 
+						example of gukbap. It remains a famous dish in Busan, still nowadays.  
+					 </p>
+					 <p><i>“Foods like gukbap (soup with rice) are popular in Korea. 
+						[...] Pork soup was made and then eaten together with rice, 
+						and so regardless of the temperature of the rice (it could be eaten cold or hot). 
+						[...] This is also why pork soup became so famous in Busan.”
+
+					</i></p>
+					<p>Nowadays, young Korean people don’t appreciate the taste of gukbap. 
+						They try it once and that’s all. It could be because gukbap is rather 
+						a very simple meal, without any side dishes. Therefore, it may seem like 
+						some “cheap meals” to most of the younger people. However, for the older generations, 
+						gukbap will always remain as delicious dishes, 
+						filled with the memory of the war and the bittersweet taste of the poor living conditions back then.</p>
+					<p><i>“But then young people say it doesn't taste good. 
+						They try it once in a while and say it's not tasty. [...] 
+						There are so many kinds of food that people don't eat often these days, 
+						but it still remains as delicious food for our generation.” 
+					</i></p>
+			</section>
+
+			<script>
+				const btn4 = document.getElementById('btn4');
+				const mask2 = document.getElementById('mask2');
+				const modal2 = document.getElementById('modal2');
+
+				btn4.addEventListener('click', () => {
+  					mask2.classList.remove('hidden');
+  					modal2.classList.remove('hidden');
+				});
+
+				mask2.addEventListener('click', () => {
+  					mask2.classList.add('hidden');
+  					modal2.classList.add('hidden');
+				});
+
+				ferme2.addEventListener('click', () => {
+  					mask2.classList.add('hidden');
+  					modal2.classList.add('hidden');
+				});
+			</script>
 		
 
 	</div>
