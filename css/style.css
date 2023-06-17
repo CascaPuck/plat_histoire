@@ -212,7 +212,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #fh5co-sayings .flexslider .slides li blockquote p {
-    font-size: 20px;
+    font-size: 13px;
     line-height: 1.5;
   }
 }
@@ -222,7 +222,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 
@@ -658,7 +658,7 @@ width: 15%;
 #langues li {
    display:inline;
    float: right;
-   margin-right: 20px;
+   margin-left: 0px;
    color: white;
 
 }
@@ -1053,12 +1053,31 @@ input {
     position: relative;
     top: -20px;
   }
+
+  #fiche-technique {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #next {
     width: 40px;
     height: 40px;
+  }
+
+  #fh5co-sayings {
+    display: none;
+  }
+
+  .choix  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    gap: 10px;
+    --b: 2px;   /* the border thickness */
+    --h: 3em; /* the height */
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   #video-intro {
@@ -1071,6 +1090,10 @@ input {
 
   #desc1, #desc2{
     width: 90%;
+  }
+
+  #desc2 {
+    margin-top: 40px;
   }
   
   .description-meal iframe {
@@ -1092,9 +1115,46 @@ input {
     bottom: -400px;
   }
 
+  #autre-plat {
+    padding-bottom: 150px;
+  }
+
   .card {
     width: 70%;
   }
+
+  #modal {
+    background: #fff;
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    color:#5e493a;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 10%;
+    text-align: center;
+    margin: 0 0;
+    z-index: 100;
+  
+  }
+
+  #modal2 {
+    background: #fff;
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    color:#5e493a;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 10%;
+    text-align: center;
+    margin: 0 0;
+    z-index: 100;
+  
+  }
+
 
   .inner_part .img {
     height: 160px;
@@ -1107,20 +1167,31 @@ input {
     margin: 0 0 5px 0;
   }
 
+  .inner_part {
+    width: 100%;
+  }
+
   .content {
     padding: 0 5px 0 15px;
-    width: 170px;
+    width: 80%;
+    position: relative;
+    top: 250px;
+    line-height: 20px;
+    left : -160px;
+  }
+
+  .inner_part .img {
+    width: 200px;
+    height: 200px;
   }
 
   .content .text {
-    font-size: 15px;
-    color: #4e4a67;
-    line-height: 1.5em;
-    text-align: left;
+   display: none;
   }
 
   .content button {
-    padding: 5px 10px;
+    padding: 20px 20px;
+    width: 200px;
     border: none;
     font-size: 13px;
     color: #fff0e6;
@@ -1131,9 +1202,9 @@ input {
     outline: none;
     background: #000000;
     float: right;
-    line-height: 20%;
+    line-height: 10%;
     position: relative;
-    top: -20px;
+    top: 20px;
   }
 }
 
