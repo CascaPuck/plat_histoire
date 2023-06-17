@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>documentary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Datetimepicker -->
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nav.css">
+
+	
+
+	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">-->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="mySidebar">
+	<button class="w3-bar-item w3-button w3-large"
+	onclick="w3_close()">X</button>
+
+	<a href="#video-intro" class=" w3-button">Introduction</a>	
+  <a href="#frise-chrono" class=" w3-button">Historical background</a>
+  <a href="#fh5co-featured" class=" w3-button">The dishes</a>
+  <a href="#map" class=" w3-button">Uijeongbu</a>
+  <a href="#about-us" class=" w3-button">About us</a>
+</div>
+<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+
+
+<div id="langues">
+	<ul>
+		<li><a href="index_en.html">EN</a></li>
+		<li>|</li>
+		<li><a href="index.html">FR</a></li>
+	</ul>
+</div>
+<div id="main">
+	
+	<div id="fh5co-container">
+		<div id="fh5co-home" class="js-fullheight" data-section="home">
+
+			<div class="flexslider">
+
+				<div class="fh5co-overlay"></div>
+				<div class="fh5co-text">
+					<div class="container">
+						<div class="row">
+							<h1 class="to-animate">History through taste</h1>
+							<h2 class="to-animate">Budae jjigae and Milmyeon </h2>
+							<div class="choix">
+								<div class="btn">
+									<div class="play">The whole documentary
+									</div>
+								</div>
+								<div class="btn">
+									<a href="#video-intro"><div class="play">A guided visit 
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  	<ul class="slides">
+			   	<li style="background: url(images/wood_1.png) repeat;"></li>
+			  	</ul>
+			</div>
+
+			<div class="clip">
+				<video src="video/DSCF2355.MP4" controls></video>
+				<b class="close">close</b>
+			</div>
+			<script>
+				let clip = document.querySelector('.clip');
+				let btn = document.querySelector(".btn");
+				let close = document.querySelector(".close");
+				let video = document.querySelector('video');
+				btn.onclick = function() {
+					btn.classList.add('active');
+					clip.classList.add('active');
+					video.play();
+					video.currentTime = 0;
+				}
+				close.onclick = function() {
+					btn.classList.remove('active');
+					clip.classList.remove('active');
+					video.pause();
+				}
+			</script>
+
+		</div>
+		<div id="video-intro" data-section="about" >
+
+				<!--<iframe  id="fh5co-about" src="https://www.youtube.com/embed/exiIwjqMOJs" title="LES JEUX DRAGON BALL Z! (2ème partie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+			<!--<div class="fh5co-2col fh5co-text">
+				<h2 class="heading to-animate">Vidéo Introduction</h2>
+				<p class="to-animate"><span class="firstcharacter">F</span>Petit texte ici parce que why not et blablablablablabababababbaba
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+			aaaaaaaaaaaaaaaa</p>-->
+			
+			<video id="fh5co-about" controls>
+				<source src="vidéos/01_INTRO.mp4" type="video/mp4">
+			  </video>
+					<a href="#frise-chrono"><img id="next" src="images/flèche_blanche.png"></a>
+			<p>A travers les deux plats que sont le budae jjigae et le milmyeon,
+				 il nous est donné de découvrir l'histoire contemporaine de la Corée. 
+				 Ils constituent une trace significative de l’histoire riche de la péninsule, 
+				 notamment de la déchirure qui existe, 
+				aujourd'hui encore, entre le Nord et le Sud, mais aussi de l’impérialisme américain.
+			</p>
+		</div>
+
+		</div>
+		<div id="fh5co-type">
+			<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1dh5i8DMX7K-kJSFnoMJxras3eJDfwNMjDH8eiw-4jLw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0' style="border-radius: 0px;"></iframe>
+			</div>
+
+		<div id="fh5co-featured" data-section="features">
+			<div class="container">
+				<div class="description-meal">
+					<div id="desc1">
+					<h2>Milmyeon</h2>
+					<p>Milmyeon is one of Busan's main dishes, 
+						and it is made with wheat noodles and cold broth. 
+						It's a variation of naengmyeon, the North Korean dish made 
+						by buckwheat flour noodles. Milmyeon must have appeared during 
+						the Korean War, when many North Korean people fled to take refuge in Busan. 
+						These refugees used wheat flour to replace buckwheat flour, 
+						which was difficult to find in Busan at the time.
+					</p>
+					</div>
+					<iframe frameborder="0" class="juxtapose" width="400px" height="389px" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=751e55d8-ee2e-11ed-b5bd-6595d9b17862"></iframe>
+					<div id="desc2">
+					<h2>Budae jjigae</h2>
+					<p>Budae jjigae, which literally means "army stew", is a mixing of typical Korean food products
+						 (vegetables, spicy soup, fishcake) and  American-inspired ones
+						  (processed spam, sausages, ham and sliced cheese).
+						   During the Korean War, Korean people went through a famine, 
+						   while American troops were living comfortably. 
+						In order to survive, some Korean civilians went scavenging for food at American bases. </p>
+					</div>
+
+				</div>
+				<div class="buttons">
+					<button><a href="#video-milmeyon">Milmyeon</a></button>
+					<button><a href="#video-buddae"> Budae Jjigae</a></button>
+				  </div>
+			</div>
+		</div>
+
+		<div id="video-milmeyon" data-section="about" >
+
+			<iframe   id="fh5co-about" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+	<div id="autre-plat" class="row">
+
+		<div class="card">
+			<input type="radio" name="select" id="slide_1" checked>
+			<input type="radio" name="select" id="slide_2">
+			<input type="checkbox" id="slideImg">
+		  
+			<div class="slider">
+			  <label for="slide_1" class="slide slide_1"></label>
+			  <label for="slide_2" class="slide slide_2"></label>
+			</div>
+		  
+			  
+			<div class="inner_part">
+			  <label for="slideImg" class="img">
+				<img class="img_1" src="images/kk.JPG">
+			  </label>
+			  <div class="content content_1">
+				<div class="title">Kkulkkuli-juk</div>
+				<div class="text">
+					Selon certains musées de Busan, ses habitants mangeaient pas mal de “kkulkulkkuli-juk” à l’époque de la guerre de Corée.		
+						</div>
+				<button>Read More</button>
+			  </div>
+			</div>
+
+			
+			<div class="inner_part">
+			  <label for="slideImg" class="img">
+				<img class="img_2" src="images/gukbap.JPG">
+			  </label>
+			  <div class="content content_2">
+				<div class="title">Gukbap</div>
+				<div class="text">
+					Le gukbap, littéralement “soupe de riz”, est une sorte de mets coréen.
+				</div>
+				<button>Read More</button>
+			  </div>
+			</div>
+		
+
+	</div>
+
+
+
+		<div id="fh5co-sayings">
+			<div class="container">
+
+					<div class="flexslider">
+						<ul class="slides">
+
+							<li>
+								<blockquote>
+									<p>&ldquo;“Over lunch, 
+										Moon told me how her grandmother had first
+										 come across army stew after fleeing North Korea as a 12-year-old girl, 
+										 and how she used to ask her grandmother to make it for her as a child. 
+										 Moon said she would always oblige,
+										  even though it brought back traumatic memories of her journey
+										   escaping Pyongyang.”
+										&rdquo;</p>
+									<p class="quote-author">&mdash;Hahna Yoon, journalist. About her meeting with Grace Moon, granddaughter of Heo Gi-Suk, founder of the first budae jjigae restaurant in Uijeongbu
+
+									</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo; “I don’t think Korea’s younger generation considers the country having been
+										 poor as something to be ashamed of.
+										 Budae-jjigae is an honest portrayal of where our country was and how far our country has come.”
+										&rdquo;</p>
+									<p class="quote-author">&mdash; Hooni Kim, Chef</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;“Garbage stew is what we called it [...] 
+										It tasted like garbage because we’d sift through 
+										the leftovers of the U.S. troops. There was no kimchi or 
+										red pepper paste in these stews like you see today. 
+										Usually, we were able to find scraps of processed sausage, 
+										Spam, and some canned beans that had been spilt.
+										 We’d take what we could find and throw everything into 
+										 lukewarm water. It was hard to swallow and was barely edible.
+										  Thinking of it still makes me nauseous.”
+
+
+										&rdquo;</p>
+									<p class="quote-author">&mdash;—Grace M. Cho, korean-american sociologist
+									</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;"warm water. The result was hard to swallow, barely edible. 
+										Thinking about it still makes me nauseous.".&rdquo;</p>
+									<p class="quote-author">&mdash;Grace M. Cho, sociologue américano-coréen </p>
+								</blockquote>
+							</li>
+						</ul>
+						
+					</div>
+
+				
+			</div>
+		</div>
+
+		<div id="video-buddae" data-section="about" >
+			<video id="fh5co-about" controls>
+				<source src="vidéos/03_BUDAE JJIGAE.mp4" type="video/mp4">
+			  </video>
+		</div>
+
+		<div class="row">
+		<div>
+			<iframe id="map" src="https://uploads.knightlab.com/storymapjs/188c417e3746126359f82b839b2d2ddf/uam-dong-en/index.html" frameborder="0" width="98%" height="700"></iframe>
+		</div>
+		</div>
+
+		<div  id="about-us" class="row">
+			<h2>A propos de nous</h2>
+			<p>This webdocumentary was produced as part of a collaboration between the Film & Visual Media Technology department at Korea's Dong-Eui University (Busan) and the Master Cultures et Métiers du Web program at the Université Gustave Eiffel (Champs-sur-Marne).</p>
+			<p>Its theme is "Traces of the past in the present", a common theme for all project groups in the class of 2023.</p>
+			<div id="fiche-technique" class="btn">
+				<a href="doc/fiche-technique.pdf"><div class="play">Fiche technique
+				</div></a>
+			</div>
+			</div>
+			
+			
+
+
+	<div class="row">
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row row-padded">
+				<div class="col-md-12 text-center">
+					<p class="to-animate">&copy; 2022/2023 - <a href="https://www.univ-gustave-eiffel.fr/">Gustave Eiffel University</a> - <a href="https://eng.deu.ac.kr/eng">Dong-Eui University</a> <br>
+					</p>
+
+					<div id="div-logo">
+						<a href="https://mastercmw.com/"><img src="images/logo_cmw.png" class="col-4 logo"></a>
+						<a href="https://www.univ-gustave-eiffel.fr/"><img src="images/logo_eiffel.png" class="col-4 logo"></a>
+						<a href="https://eng.deu.ac.kr/eng"><img src="images/logo_eui.png" class="col-4 logo"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap DateTimePicker -->
+	<script src="js/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script>
+		$(function () {
+	       $('#date').datetimepicker();
+	   });
+	</script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<script>
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("openNav").style.display = 'none';
+		document.getElementById("mySidebar").style.marginLeft= "15%";
+	}
+	function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	  document.getElementById("mySidebar").style.display = "none";
+		document.getElementById("mySidebar").style.marginLeft = "0%";
+	  document.getElementById("openNav").style.display = "block";
+	}
+	</script>
+
+
+	</body>
+</html>
