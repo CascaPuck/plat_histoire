@@ -588,7 +588,7 @@ button:active {
   color: white;
   top: -230px;
   font-weight: 200;
-  right: -40px;
+  right: 100px;
   cursor: pointer;
   font-size: 50px;
 }
