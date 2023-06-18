@@ -104,20 +104,22 @@
 			</div>
 
 			<div class="clip">
-				<iframe id=fh5co-about src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 0px;"></iframe>
+				<iframe id="docu-entier" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 0px; width: 80%;"></iframe>
 
 				<b class="close">X</b>
 			</div>
 			<script>
-				let clip = document.querySelector('.clip');
+				let clip = document.querySelector(".clip");
 				let btn = document.querySelector(".btn");
 				let close = document.querySelector(".close");
-				let video = document.querySelector('video');
+				let video = document.querySelector('#docu-entier');
 				btn.onclick = function() {
+					video.style.height ="550px";
 					btn.classList.add('active');
 					clip.classList.add('active');
 					video.play();
 					video.currentTime = 0;
+					video.style.height ="450px";
 				}
 				close.onclick = function() {
 					btn.classList.remove('active');
