@@ -104,26 +104,33 @@
 			</div>
 
 			<div class="clip">
-				<iframe id="docu-entier" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 0px; width: 80%;"></iframe>
+				<iframe id="docu-entier" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 0px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;"></iframe>
 
 				<b class="close">X</b>
 			</div>
+
 			<script>
+				
 				let clip = document.querySelector(".clip");
 				let btn = document.querySelector(".btn");
 				let close = document.querySelector(".close");
 				let video = document.querySelector('#docu-entier');
+				clip.style.display = "none";
+				video.style.display = "none";
 				btn.onclick = function() {
-					video.style.height ="550px";
 					btn.classList.add('active');
 					clip.classList.add('active');
+					clip.style.display = "block";
+					video.style.display = "block";
+					video.style.width = "80%";
+					video.style.height = "500px";
 					video.play();
 					video.currentTime = 0;
-					video.style.height ="450px";
 				}
 				close.onclick = function() {
 					btn.classList.remove('active');
 					clip.classList.remove('active');
+					clip.style.display = "none";
 					video.pause();
 				}
 			</script>
@@ -171,6 +178,7 @@
 		</div>
 
 		<div id="video-milmeyon" data-section="about" >
+			<h2 style="text-align: center;">Milmyeon</h2>
 
 			<iframe   id="fh5co-about" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			<a href="#fh5co-featured"><img id="next" src="images/flèche_en_haut.png"></a>
@@ -334,67 +342,8 @@
 	</div>
 
 
-	<div class="row">
-		<div id="fh5co-sayings">
-			<div class="container">
-
-					<div class="flexslider">
-						<ul class="slides">
-
-							<li>
-								<blockquote>
-									<p>&ldquo;"Au cours du déjeuner, Mme. Moon m'a raconté comment sa grand-mère avait
-										 découvert le budae jjigae après avoir fui la Corée du Nord, 
-										 alors qu'elle était âgée d’à peine 12 ans, 
-										 et comment elle avait l'habitude de demander à sa grand-mère de le préparer pour elle.
-										  Mme. Moon m'a dit que sa grand-mère acceptait toujours de le faire malgré les souvenirs
-										   traumatisants de sa fuite de Pyongyang qui refaisaient surface.”&rdquo;</p>
-									<p class="quote-author">&mdash;Hahna Yoon, journaliste. À propos de sa rencontre avec Grace Moon, la petite-fille de Heo Gi-Suk, gérante du premier restaurant dev budae jjigae à Uijeongbu
-									</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo; "Je ne pense pas que la jeune génération coréenne considère son pays 
-										comme ayant été pauvre et qu'il faudrait en avoir honte. 
-										Le budae jjigae est une représentation authentique de ce qu'était notre pays 
-										ainsi que du chemin que nous Coréens avons parcouru jusqu’ici."
-										&rdquo;</p>
-									<p class="quote-author">&mdash; Hooni Kim, chef cuisinier</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;"Nous l'appelions "ragoût d'ordures" [...] Il avait le goût des 
-										ordures parce que nous le confectionnions à partir des restes trouvés aux
-										 alentours des bases militaires américaines. Il n'y avait ni kimchi ni 
-										 gochujang (pâte de piment rouge) dans ce plat, comme c'est le cas aujourd'hui.
-										  Généralement, nous trouvions des restes de saucisses transformées,
-										   du spam ou encore des haricots dans des boîtes de conserve déjà ouvertes voire renversées. 
-										   Nous prenions tout ce que nous trouvions et le jetions dans de l'eau tiède. 
-										   Le résultat était bien difficile à avaler, à peine comestible. 
-										   Y penser me donne  par ailleurs encore la nausée."
-
-										&rdquo;</p>
-									<p class="quote-author">&mdash;Grace M. Cho, sociologue américano-coréen </p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;"Il s'agit d'un rappel de la brutale "guerre oubliée" qui n'a pas encore pris fin. Elle représente la créativité qui a émergé de la dévastation, un héritage de la relation compliquée entre les Coréens et les Américains".&rdquo;</p>
-									<p class="quote-author">&mdash;Grace M. Cho, sociologue américano-coréen </p>
-								</blockquote>
-							</li>
-						</ul>
-						
-					</div>
-
-				
-			</div>
-		</div>
-		</div>
-
 		<div id="video-buddae" data-section="about" >
+			<h2 style="text-align: center;">Budae Jjigae</h2>
 			<video id="fh5co-about" controls>
 				<source src="vidéos/03_BUDAE JJIGAE.mp4" type="video/mp4">
 			  </video>
@@ -406,6 +355,66 @@
 			<iframe id="map" src="https://uploads.knightlab.com/storymapjs/188c417e3746126359f82b839b2d2ddf/uijeongbu-budaejjigae-street/index.html" frameborder="0" width="100%" height="700"></iframe> 
 		</div>
 		</div>
+
+		<div class="row">
+			<div id="fh5co-sayings">
+				<div class="container">
+	
+						<div class="flexslider">
+							<ul class="slides">
+	
+								<li>
+									<blockquote>
+										<p>&ldquo;"Au cours du déjeuner, Mme. Moon m'a raconté comment sa grand-mère avait
+											 découvert le budae jjigae après avoir fui la Corée du Nord, 
+											 alors qu'elle était âgée d’à peine 12 ans, 
+											 et comment elle avait l'habitude de demander à sa grand-mère de le préparer pour elle.
+											  Mme. Moon m'a dit que sa grand-mère acceptait toujours de le faire malgré les souvenirs
+											   traumatisants de sa fuite de Pyongyang qui refaisaient surface.”&rdquo;</p>
+										<p class="quote-author">&mdash;Hahna Yoon, journaliste. À propos de sa rencontre avec Grace Moon, la petite-fille de Heo Gi-Suk, gérante du premier restaurant dev budae jjigae à Uijeongbu
+										</p>
+									</blockquote>
+								</li>
+								<li>
+									<blockquote>
+										<p>&ldquo; "Je ne pense pas que la jeune génération coréenne considère son pays 
+											comme ayant été pauvre et qu'il faudrait en avoir honte. 
+											Le budae jjigae est une représentation authentique de ce qu'était notre pays 
+											ainsi que du chemin que nous Coréens avons parcouru jusqu’ici."
+											&rdquo;</p>
+										<p class="quote-author">&mdash; Hooni Kim, chef cuisinier</p>
+									</blockquote>
+								</li>
+								<li>
+									<blockquote>
+										<p>&ldquo;"Nous l'appelions "ragoût d'ordures" [...] Il avait le goût des 
+											ordures parce que nous le confectionnions à partir des restes trouvés aux
+											 alentours des bases militaires américaines. Il n'y avait ni kimchi ni 
+											 gochujang (pâte de piment rouge) dans ce plat, comme c'est le cas aujourd'hui.
+											  Généralement, nous trouvions des restes de saucisses transformées,
+											   du spam ou encore des haricots dans des boîtes de conserve déjà ouvertes voire renversées. 
+											   Nous prenions tout ce que nous trouvions et le jetions dans de l'eau tiède. 
+											   Le résultat était bien difficile à avaler, à peine comestible. 
+											   Y penser me donne  par ailleurs encore la nausée."
+	
+											&rdquo;</p>
+										<p class="quote-author">&mdash;Grace M. Cho, sociologue américano-coréen </p>
+									</blockquote>
+								</li>
+								<li>
+									<blockquote>
+										<p>&ldquo;"Il s'agit d'un rappel de la brutale "guerre oubliée" qui n'a pas encore pris fin. Elle représente la créativité qui a émergé de la dévastation, un héritage de la relation compliquée entre les Coréens et les Américains".&rdquo;</p>
+										<p class="quote-author">&mdash;Grace M. Cho, sociologue américano-coréen </p>
+									</blockquote>
+								</li>
+							</ul>
+							
+						</div>
+	
+					
+				</div>
+			</div>
+			</div>
 
 		<div  id="about-us" class="row">
 			<h2>A propos de nous</h2>

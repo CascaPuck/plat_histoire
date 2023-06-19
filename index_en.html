@@ -105,23 +105,31 @@
 			</div>
 
 			<div class="clip">
-				<video src="video/DSCF2355.MP4" controls></video>
-				<b class="close">close</b>
+				<iframe id="docu-entier" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 0px;"></iframe>
+				<b class="close">X</b>
 			</div>
 			<script>
-				let clip = document.querySelector('.clip');
+				
+				let clip = document.querySelector(".clip");
 				let btn = document.querySelector(".btn");
 				let close = document.querySelector(".close");
-				let video = document.querySelector('video');
+				let video = document.querySelector('#docu-entier');
+				clip.style.display = "none";
+				video.style.display = "none";
 				btn.onclick = function() {
 					btn.classList.add('active');
 					clip.classList.add('active');
+					clip.style.display = "block";
+					video.style.display = "block";
+					video.style.width = "80%";
+					video.style.height = "500px";
 					video.play();
 					video.currentTime = 0;
 				}
 				close.onclick = function() {
 					btn.classList.remove('active');
 					clip.classList.remove('active');
+					clip.style.display = "none";
 					video.pause();
 				}
 			</script>
@@ -181,7 +189,7 @@
 		</div>
 
 		<div id="video-milmeyon" data-section="about" >
-
+			<h2 style="text-align: center;">Milmyeon</h2>
 			<iframe   id="fh5co-about" src="https://www.youtube.com/embed/1QZUsesFtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			<a href="#fh5co-featured"><img id="next" src="images/flèche_en_haut.png"></a>
 	</div>
@@ -336,8 +344,25 @@
 		
 
 	</div>
+	</div>
 
 
+
+
+
+		<div id="video-buddae" data-section="about" >
+			<h2 style="text-align: center;">Budae Jjigae</h2>
+			<video id="fh5co-about" controls>
+				<source src="vidéos/03_BUDAE JJIGAE.mp4" type="video/mp4">
+			  </video>
+			  <a href="#fh5co-featured"><img id="next" src="images/flèche_en_haut.png"></a>
+		</div>
+
+		<div class="row">
+		<div>
+			<iframe id="map" src="https://uploads.knightlab.com/storymapjs/188c417e3746126359f82b839b2d2ddf/uam-dong-en/index.html" frameborder="0" width="98%" height="700"></iframe>
+		</div>
+		</div>
 
 		<div id="fh5co-sayings">
 			<div class="container">
@@ -400,18 +425,6 @@
 
 				
 			</div>
-		</div>
-
-		<div id="video-buddae" data-section="about" >
-			<video id="fh5co-about" controls>
-				<source src="vidéos/03_BUDAE JJIGAE.mp4" type="video/mp4">
-			  </video>
-			  <a href="#fh5co-featured"><img id="next" src="images/flèche_en_haut.png"></a>
-		</div>
-
-		<div class="row">
-		<div>
-			<iframe id="map" src="https://uploads.knightlab.com/storymapjs/188c417e3746126359f82b839b2d2ddf/uam-dong-en/index.html" frameborder="0" width="98%" height="700"></iframe>
 		</div>
 		</div>
 
